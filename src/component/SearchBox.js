@@ -1,5 +1,5 @@
-import {ShowList} from "./Reusable/0.ShowList";
-import {ShowPlusButton} from "./Reusable/0.ShowPlusButton";
+import {ShowList} from "./Reusable/ShowList";
+import {ShowPlusButton} from "./Reusable/ShowPlusButton";
 import {useState} from "react";
 
 export function SearchBox({movies, setSelectedId, selectedId, setSelectedMovie, setRating, setIsDetailLoading}) {

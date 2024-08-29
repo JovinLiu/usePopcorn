@@ -1,4 +1,4 @@
-import {StarRating} from "./0.StarRating";
+import {StarRating} from "./StarRating";
 
 //下面StarRating这里设置API
 export function AddToList({rating, setRating, setWatched, watched, movie, selectedId, setSelectedId}) {

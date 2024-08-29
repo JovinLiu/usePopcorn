@@ -1,6 +1,6 @@
-import {ShowList} from "./Reusable/0.ShowList";
-import {ShowPlusButton} from "./Reusable/0.ShowPlusButton";
-import {WatchedStats} from "./3.1.WatchedStats";
+import {ShowList} from "./Reusable/ShowList";
+import {ShowPlusButton} from "./Reusable/ShowPlusButton";
+import {WatchedStats} from "./WatchedStats";
 import {useState} from "react";
 
 export function WatchedBox({watched, setWatched, setIsDetailLoading, setRating, setSelectedId}) {

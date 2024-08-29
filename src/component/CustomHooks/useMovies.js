@@ -18,7 +18,7 @@ export function useMovies(query) {
           setIsLoading(true);
           setError("");
 
-          const res = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=${query}`, {signal: controller.signal});
+          const res = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&s=${query}`, {signal: controller.signal});
           if (!res.ok) throw Error("Something went wrong with fetching Movie Data");
           const data = await res.json();
           if (data.Response === "False") throw new Error("Movie not found");

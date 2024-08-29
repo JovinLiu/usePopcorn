@@ -1,6 +1,6 @@
-import {ShowMovieDetail} from "./0.ShowMovieDetail";
-import {ShowYear} from "./0.ShowYear";
-import {ShowImageAndTitle} from "./0.ShowImageAndTitle";
+import {ShowMovieDetail} from "./ShowMovieDetail";
+import {ShowYear} from "./ShowYear";
+import {ShowImageAndTitle} from "./ShowImageAndTitle";
 import {useEffect} from "react";
 
 const KEY = "9d7af29e";
@@ -11,7 +11,7 @@ export function ShowList({movies, setWatched, selectedId, setSelectedId, setSele
       async function getMovieDetail() {
         setIsDetailLoading(true);
         if (!selectedId) return;
-        const res = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`);
+        const res = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`);
         const data = await res.json();
         setSelectedMovie(data);
         setIsDetailLoading(false);

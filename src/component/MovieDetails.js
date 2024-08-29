@@ -1,5 +1,5 @@
 import {useEffect, useRef} from "react";
-import {AddToList} from "./Reusable/0.AddToList";
+import {AddToList} from "./Reusable/AddToList";
 import {useKey} from "./CustomHooks/useKey";
 
 export function MovieDetails({setSelectedId, selectedMovie, rating, setRating, selectedId, watched, setWatched}) {

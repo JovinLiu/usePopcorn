@@ -1,4 +1,4 @@
-import {ShowMovieDetail} from "./Reusable/0.ShowMovieDetail";
+import {ShowMovieDetail} from "./Reusable/ShowMovieDetail";
 
 export function WatchedStats({watched, avg}) {
   return (

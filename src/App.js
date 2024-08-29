@@ -1,15 +1,15 @@
 import {useState} from "react";
-import {Navbar, Logo, Search, NumResults} from "./component/1.Navbar";
-import {WatchedBox} from "./component/3.0.WatchedBox";
-import {SearchBox} from "./component/2.SearchBox";
-import {BoxLeft} from "./component/Reusable/0.BoxLeft";
-import {BoxRight} from "./component/Reusable/0.BoxRight";
-import {Loader} from "./component/Reusable/0.Loader";
-import {Main} from "./component/Reusable/0.Main";
-import {MovieDetails} from "./component/3.2.MovieDetails";
+import {Navbar, Logo, Search, NumResults} from "./component/Navbar";
+import {WatchedBox} from "./component/WatchedBox";
+import {SearchBox} from "./component/SearchBox";
+import {BoxLeft} from "./component/Reusable/BoxLeft";
+import {BoxRight} from "./component/Reusable/BoxRight";
+import {Loader} from "./component/Reusable/Loader";
+import {Main} from "./component/Reusable/Main";
+import {MovieDetails} from "./component/MovieDetails";
 import {useMovies} from "./component/CustomHooks/useMovies";
 import {useLocalStorageState} from "./component/CustomHooks/useLocalStorageState";
-import {ErrorMessage} from "./component/Reusable/0.ErrorMessage";
+import {ErrorMessage} from "./component/Reusable/ErrorMessage";
 
 export default function App() {
   const [query, setQuery] = useState("");
